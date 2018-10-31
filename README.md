@@ -12,17 +12,17 @@
 
 This project uses the following Python libraries you may need to install:
 
-pandas
+*pandas*
 
-sklearn
+*sklearn*
 
-nltk
+*nltk*
 
-plotly
+*plotly*
 
-flask
+*flask*
 
-sqlalchemy
+*sqlalchemy*
 
 If you do not have any packages though the project, you can use `pip install package_name` to install them.In addition, NLTK data need to be downloaded separately, which is included in the program and may take a little time.
 
@@ -48,19 +48,21 @@ This project is from Udacity's data engineering project. It perform the pipeline
 
 ## About the data<a name="about_the_data"></a>
 
-This data is about the classification of disaster messages. In the course of training, I found this data to be highly unbalanced. In particular, one part of the messages categories have many data, while the others may be few. The model performs well in the classification with more data, but poor for the messages categories with less data. I adopted over-sampling and under-sampling schemes, but they are not ideal. I think the main reason is that the dimensions of the data are too large. I used the weighted F1 score to evaluate the model, hoping that the model would pay more attention to the classification performance of all categories, rather than the overall accuracy.
+This data is about the classification of disaster messages. In the course of training, I found this data to be highly unbalanced. In particular, one part of the messages categories have many data, while the others may be few. The model performs well in the classification with more data, but poor for the messages categories with less data. 
+
+I adopted over-sampling and under-sampling schemes, but they are not ideal. I think the main reason is that the dimensions of the data are too large. I used the weighted F1 score to evaluate the model, hoping that the model would pay more attention to the classification performance of all categories, rather than the overall accuracy.
 
 ## Files Description<a name="files"></a>
 
-**run.py** Web app script of the project, to start the processing in the background of the web app.
+**run.py**: Web app script of the project, to start the processing in the background of the web app.
 
-**go.html** and **master.html** Front-end file of the web app.
+**go.html** and **master.html**: Front-end file of the web app.
 
-**process_data.py** ETL pipeline script, be used in cleaning the data for next ML step.
+**process_data.py**: ETL pipeline script, be used in cleaning the data for next ML step.
 
-**train_classifier.py** ML pipeline script, be used in training model for web app.
+**train_classifier.py**: ML pipeline script, be used in training model for web app.
 
-**ETL Pipeline Preparation.ipynb** and **ML Pipeline Preparation.ipynb** Jupyter notebook file to explore the dataset, I already rewrite the code to python script so it may be useless for you.
+**ETL Pipeline Preparation.ipynb** and **ML Pipeline Preparation.ipynb**: Jupyter notebook file I use to explore the dataset, I already rewrite the code to python script so it may be useless for you.
 
 
 
